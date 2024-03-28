@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="page">
+<div>
+    <label class="checkbox-green">
+        <input type="checkbox" id="checkbox">
+        <span class="checkbox-green-switch" data-label-on="On" data-label-off="Off"></span>
+    </label>
+
+</div>
+<div class="form-container">
+    <h1>User registration</h1>
+    <form action="/reg-data" method="post">
+        <div class="form-input" id="name-input-container">
+            <label for="user-name-input">Enter your name</label>
+            <input id="user-name-input" type="text" placeholder="Name" name="username"/>
+        </div>
+        <div class="form-input">
+            <label for="password-input">Enter your password</label>
+            <input id="password-input" type="password" placeholder="Password" name="password"/>
+        </div>
+        <div class="form-input">
+            <label>Enter your gender</label>
+            <div>
+                <input id="gender-w-input" type="radio" placeholder="Gender" name="gender" value="woman"/>
+                <label for="gender-w-input">Woman</label>
+
+                <input id="gender-m-input" type="radio" placeholder="Gender" name="gender" value="man"/>
+                <label for="gender-m-input">Man</label>
+            </div>
+        </div>
+    <button class="button" id="submit-input">Send</button>
+    </form>
+
+
+</div>
+<script src="js_code.js"></script>
+</body>
+</html>
